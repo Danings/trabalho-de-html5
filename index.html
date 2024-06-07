@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Binding of Isaac</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #555;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .container {
+            padding: 20px;
+        }
+
+        .tab-content {
+            display: none;
+            padding: 20px;
+            background-color: white;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+
+        .tab-content img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        @media (max-width: 600px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                text-align: left;
+                padding: 10px;
+            }
+        }
+    </style>
+    <script>
+        function openTab(tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].classList.remove("active");
+            }
+            tablinks = document.getElementsByClassName("tab-link");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).classList.add("active");
+            document.querySelector('[data-tab="' + tabName + '"]').classList.add("active");
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('[data-tab="inicio"]').click();
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src=https://cdn2.steamgriddb.com/logo_thumb/939fdd79617b7d679d5fb7a0073fd6ad.png alt="Imagem do jogo The Binding of Isaac">
+    </header>
+
+    <nav>
+        <a class="tab-link" data-tab="inicio" onclick="openTab('inicio')">Início</a>
+        <a class="tab-link" data-tab="personagens" onclick="openTab('personagens')">Personagens</a>
+        <a class="tab-link" data-tab="items" onclick="openTab('items')">Items</a>
+    </nav>
+
+    <div class="container">
+        <div id="inicio" class="tab-content">
+            <h2>sobre o jogo</h2>
+            <p>Sobre o jogo
+                The Binding of Isaac: Rebirth é um jogo de tiro e RPG de ação gerado aleatoriamente com elementos roguelike pesados . Os jogadores acompanharão Isaac em uma missão para escapar de sua mãe , enfrentando hordas de criaturas misteriosas , descobrindo segredos e lutando contra chefes temíveis . Ao longo do caminho, Isaac pode encontrar tesouros bizarros que mudam sua forma e lhe dão habilidades sobre-humanas. Mas não será fácil!</p>
+                
+                
+            </p2>   Rebirth é o remake do jogo original que apresenta um motor de jogo que roda a 60 FPS, arte em estilo pixelado, efeitos visuais sofisticados e uma nova trilha sonora de Ridiculon . Ah, sim, centenas de novas salas , sinergias e melhorias reajustadas pelo criador da série, Edmund McMillen e outros desenvolvedores . Existem três DLCs disponíveis para Rebirth</p2>
+            
+        </div>
+
+        <div id="personagens" class="tab-content">
+            <h2>Personagens</h2>
+            <p>Existem 34 personagens jogáveis ​​em The Binding of Isaac: Rebirth , com 11 disponíveis no jogo base e 23 disponíveis nos DLCs. Cinco desses personagens ( Isaac , Madalena , Cain , Judas ) vieram com o original The Binding of Isaac , enquanto dois personagens adicionais ( Eva e Samson ) foram adicionados posteriormente. Eva foi adicionada na atualização de Halloween de The Binding of Isaac , enquanto Samson foi adicionado na expansão Wrath of the Lamb . Rebirth contém quatro novos personagens ( Azazel , Lazarus , Eden e The Lost ). Na expansão Afterbirth , um novo personagem ( Lilith ) foi adicionado, além de mais um personagem através de uma atualização ( Keeper ). 
+             Cada um possuindo suas diferenças de status e gameplay   
+            </p>
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/e/e5/Character_Isaac_appearance.png/revision/latest?cb=20231008190524 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/b/bf/Character_Magdalene_appearance.png/revision/latest?cb=20210824111834 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/d/db/Character_Cain_appearance.png/revision/latest?cb=20211204211028 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/8/8d/Character_Judas_appearance.png/revision/latest?cb=20210826071249 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/9/91/Character_Eve_appearance.png/revision/latest?cb=20210826071757 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/8/8c/Character_Samson_appearance.png/revision/latest?cb=20210824125143 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/0/06/Character_Azazel_appearance.png/revision/latest?cb=20210824125228 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/7/78/Character_Lazarus_appearance.png/revision/latest?cb=20211111110428 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/8/83/Character_Eden_appearance.png/revision/latest?cb=20210826072021 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/f/f0/Character_The_Lost_appearance.png/revision/latest?cb=20210826071932 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/a/a8/Character_Lilith_appearance.png/revision/latest?cb=20210821134536 width="60" height="70" alt="Personagens do jogo">
+            <img src=https://static.wikia.nocookie.net/bindingofisaacre_gamepedia/images/2/20/Character_Keeper_appearance.png/revision/latest?cb=20210821185529alt width="60" height="70" alt="Personagens do jogo">
+
+        </div>
+
+        <div id="items" class="tab-content">
+            <h2>Items</h2>
+            <p>Os itens são parte integrante da jogabilidade de The Binding of Isaac: Rebirth . Eles modificam os atributos de Isaac , concedem ou modificam efeitos de rasgo e muito mais.
+
+                Os itens são classificados em vários tipos e grupos distintos. Alguns itens são passivos, que adicionam um efeito permanente ao Isaac, enquanto outros só são ativados quando usados. O original The Binding of Isaac tinha 196 itens. Rebirth tem um total de 341 itens. Afterbirth adicionou 95 novos itens, totalizando 436 itens. Afterbirth † adicionou 111 novos itens, totalizando 547 itens. repentance adicionou 169 novos itens, totalizando 716 itens. Uma atualização para repentance, V1.7.5 , adicionou 3 novos itens, totalizando 719 itens.</p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/7/70/The_Binding_of_Isaac_Repentance_Release_Logo.jpg" alt="Items do jogo">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 The Binding of Isaac Fan Site. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
